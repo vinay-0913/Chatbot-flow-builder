@@ -1,0 +1,127 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.save-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  min-height: 0;
+  flex: 1;
+}
+
+.canvas-wrap {
+  min-height: 0;
+}
+
+.right-panel {
+  border-left: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.node-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.draggable-node {
+  border: 1px dashed #3b82f6;
+  padding: 0.9rem;
+  border-radius: 8px;
+  background: white;
+  cursor: grab;
+}
+
+.back-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.error-banner {
+  margin: 0 1rem 1rem;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.text-node {
+  min-width: 180px;
+  border: 1px solid #10b981;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.text-node-header {
+  background: #d1fae5;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.text-node-body {
+  padding: 0.55rem;
+  font-size: 0.9rem;
+}
